@@ -10,8 +10,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bcg-color);
   letter-spacing: 0.02em;
 }
 .list {
@@ -24,12 +24,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: 700;
 }
 /* HEADER */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -41,7 +41,7 @@ h4 {
 }
 
 .nav-link {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--secondary-text-color);
@@ -53,9 +53,11 @@ h4 {
   color: var(--primary-text-color);
 }
 .nav-link:hover,
-.nav-link:focus,
-.address-link:hover,
-.address-link:focus {
+.nav-link:focus {
+  color: var(--primary-text-color);
+}
+.nav-link:active,
+.address-link:hover {
   color: var(--accent-color);
 }
 /* /HEADER */
@@ -73,7 +75,8 @@ h4 {
   color: #ffffff;
 }
 .hero-button {
-  font-weight: 600;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   align-items: center;
@@ -85,17 +88,20 @@ h4 {
 
 .hero-button:hover,
 .hero-button:focus {
+  background-color: #4d5ae5;
+}
+.hero-button:active {
   background-color: #404bbf;
 }
 /* /HERO-SECTION */
 
 /* FEATURES-SECTION */
-.features-list title {
+.features-list .title {
   font-size: 20px;
   line-height: 1.2;
   color: var (--secondary-text-color);
 }
-.features-list text {
+.features-list .text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -133,7 +139,8 @@ h4 {
 /* MAIN-PORTFOLIO */
 
 .filtr-button {
-  font-weight: 600;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -157,12 +164,12 @@ h4 {
 }
 .logo-footer {
   font-family: "Raleway";
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--additional-bcg-color);
 }
 
 .text-footer {
