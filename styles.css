@@ -11,7 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
-  background-color: var(--primary-bcg-color);
+  background-color: #ffffff;
   letter-spacing: 0.02em;
 }
 .list {
